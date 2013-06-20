@@ -1,0 +1,86 @@
+/* CSS Document */
+
+/* CSS Document */
+body{
+	margin: 0 auto;
+	width:250px;
+	height:600px;
+	font-size:12px;
+}
+.top{	
+	border:#33FF00;
+	height:24px;
+}
+.time{
+	width:300px;
+	height:22px;
+	
+	float:left;
+	margin-top:2px;
+	margin-left:50px;
+}
+.setindex{
+	width:85px;
+	height:20px;
+	
+	float:left;
+	margin-left:50px;
+	margin-top:2px;
+}
+.myhref{
+	float:right;
+	margin-right:50px;
+	margin-top:2px;
+}
+.logo{
+	width:220px;
+	height:100px;
+	
+	float:left;
+	margin-top:3px;
+	margin-left:10px;
+}
+.theme{
+	width:300px;
+	height:100px;
+	text-align:center;
+	float:left;
+	margin-left:20px;
+	margin-top:3px;
+}
+.login{
+	width:300px;
+	height:100px;
+	
+	float:left;
+	margin-left:10px;
+	margin-top:3px;
+}
+.vote_web{
+	width:180px;
+	height:300px;
+	
+	float:left;
+	margin-left:10px;
+	margin-top:3px;
+}
+.main{
+	width:450px;
+	height:600px;
+	
+	float:left;
+	margin-left:10px;
+	margin-top:3px;
+}
+.vote_game{
+	width:180px;
+	height:300px;
+	background:#339900;
+	float:left;
+	margin-left:10px;
+	margin-top:3px;
+}
+.bbs{
+	width:250px;
+	font-size:12px;
+}

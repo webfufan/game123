@@ -1,0 +1,32 @@
+CREATE DATABASE game123;
+USE game123; 
+/*建立了两个表，第一个是管理员登陆界面*/
+CREATE TABLE admin(
+	admin_id int(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	admin_name  varchar(20) NOT NULL,
+	admin_password  varchar(100) NOT NULL
+);
+INSERT INTO admin VALUES('001','dar',md5('123'));
+INSERT INTO admin VALUES('002','van',md5('123'));
+/*第二个是普通用户登陆界面*/
+CREATE TABLE user(
+	user_id int(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	user_name  varchar(20) NOT NULL,
+	user_password  varchar(100) NOT NULL,
+	user_grade int(10) NOT NULL
+);
+INSERT INTO user VALUES('001','user1',md5('123'),'1');
+INSERT INTO user VALUES('002','user2',md5('123'),'1');
+INSERT INTO user VALUES('003','user3',md5('12345'),'1');
+INSERT INTO user VALUES('004','user4',md5('abc'),'1');
+/*注意其中使用MD5值进行数据加密，这样在数据密码传输的过程中才是安全的*/
+/*建立了两个管理员和三个用户，可以用上述账号做测试*/
+CREATE TABLE web(
+	game_id int(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	game_name  varchar(20) NOT NULL,
+	game_num int(10) NOT NULL
+);
+INSERT INTO web VALUES('001','穿越火线','0');
+INSERT INTO web VALUES('002','英雄联盟','0');
+INSERT INTO web VALUES('003','DOTA1','0');
+INSERT INTO web VALUES('004','捕鱼达人','0');
